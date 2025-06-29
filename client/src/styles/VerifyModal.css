@@ -1,0 +1,133 @@
+.verify-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.verify-modal {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.verify-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.verify-modal h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.verify-input-group {
+  margin: 1.5rem 0;
+}
+
+.verify-input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.verify-input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.verify-modal button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.verify-modal button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.verify-modal button[type="submit"]:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.verify-message {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.verify-message.error {
+  color: #d32f2f;
+  background-color: #fde0e0;
+}
+
+.verify-message.success {
+  color: #388e3c;
+  background-color: #e8f5e9;
+}
+
+.verify-footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.resend-link {
+  background: none;
+  border: none;
+  color: #1976d2;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.resend-link:hover {
+  color: #0d47a1;
+}
+
+/* Añade estos estilos adicionales */
+.resend-message {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.resend-message.error {
+  color: #d32f2f;
+}
+
+.resend-message.success {
+  color: #388e3c;
+}
+
+.verify-input-group input {
+  letter-spacing: 1px; /* Mejor legibilidad para códigos */
+  font-family: monospace; /* Fuente monoespaciada para códigos */
+  text-transform: uppercase; /* Convertir a mayúsculas */
+}

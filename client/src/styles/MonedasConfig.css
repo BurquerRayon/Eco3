@@ -1,0 +1,139 @@
+.monedas-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  color: #228B22;
+  margin-bottom: 1.5rem;
+}
+
+.btn-volver {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.acciones-monedas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.acciones-monedas input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.moneda-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.moneda-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.moneda-form button {
+  grid-column: span 2;
+  padding: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.moneda-form button:hover {
+  background-color: #0052a3;
+}
+
+.mensaje-alerta {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  background-color: #28a745;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.grid-monedas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.tarjeta-moneda {
+  background: #f1fdf1;
+  border: 1px solid #d0e8d0;
+  padding: 15px;
+  border-radius: 10px;
+  transition: box-shadow 0.2s;
+}
+
+.tarjeta-moneda h4 {
+  margin-bottom: 6px;
+  color: #006400;
+}
+
+.tarjeta-moneda p {
+  margin: 5px 0;
+}
+
+.tarjeta-moneda .acciones {
+  margin-top: 10px;
+}
+
+.tarjeta-moneda .acciones button {
+  background-color: #3e8ed0;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.tarjeta-moneda .acciones button:hover {
+  background-color: #3279ba;
+}
+
+.btn-toggle-form {
+  padding: 10px 16px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-toggle-form:hover {
+  background-color: #218838;
+}

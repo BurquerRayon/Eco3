@@ -1,0 +1,64 @@
+/* styles/Register.css */
+
+.form-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 1rem;
+  color: #2a7d2e;
+  font-size: 1.8rem;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-container input {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-container input:focus {
+  border-color: #2a7d2e;
+}
+
+.form-container button {
+  padding: 0.75rem 2rem;;
+  font-size: 1rem;
+  background-color: #2a7d2e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto;
+  align-self: center;
+}
+
+.form-container button:hover {
+  background-color: #256c29;
+}
+
+.form-container p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.form-container p:empty {
+  display: none;
+}

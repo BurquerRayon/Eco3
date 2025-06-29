@@ -1,0 +1,230 @@
+/* GestionUsuarios.css */
+
+.gestion-usuarios {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.gestion-usuarios h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.acciones-superiores {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.acciones-superiores button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.acciones-superiores button:hover {
+  background-color: #2980b9;
+}
+
+.acciones-superiores input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 250px;
+}
+
+.formulario-usuario {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  align-items: end;
+}
+
+.formulario-usuario input,
+.formulario-usuario select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.formulario-usuario button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  width: auto;
+  justify-self: start;
+  min-width: fit-content;
+  white-space: nowrap;
+}
+
+.formulario-usuario button:hover {
+  background-color: #27ae60;
+}
+
+.mensaje {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.tabla-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 1px 3px rgba(18, 67, 90, 0.1);
+}
+
+.tabla-usuarios th {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.tabla-usuarios td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabla-usuarios tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.tabla-usuarios tr:hover {
+  background-color: #e9f7fe;
+}
+
+.btn-editar {
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-editar:hover {
+  background-color: #d35400;
+}
+
+.btn-eliminar {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-eliminar:hover {
+  background-color: #c0392b;
+}
+
+.btn-cancelar {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-cancelar:hover {
+  background-color: #7f8c8d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .formulario-usuario {
+    grid-template-columns: 1fr;
+  }
+  
+  .tabla-usuarios {
+    display: block;
+    overflow-x: auto;
+  }
+  
+  .acciones-superiores {
+    flex-direction: column;
+  }
+  
+  .acciones-superiores button,
+  .acciones-superiores input {
+    width: 100%;
+  }
+}
+
+/* Añade estas reglas al archivo GestionUsuarios.css */
+
+.usuarios-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.dashboard-button:hover {
+  background-color: #2980b9;
+}
+
+/* Ajustes para responsive */
+@media (max-width: 768px) {
+  .usuarios-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .dashboard-button {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .acciones-superiores {
+    gap: 10px;
+  }
+}

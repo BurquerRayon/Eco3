@@ -1,0 +1,137 @@
+.nacionalidades-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.nacionalidades-container h2 {
+  text-align: center;
+  color: #228B22;
+  margin-bottom: 1rem;
+}
+
+.btn-volver {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.acciones-nacionalidades {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.acciones-nacionalidades input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn-toggle-form {
+  background-color: #228B22;
+  color: white;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-toggle-form:hover {
+  background-color: #1e7d1e;
+}
+
+.nacionalidad-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.nacionalidad-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.btn-guardar {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-guardar:hover {
+  background-color: #004f9e;
+}
+
+.grid-nacionalidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta-nacionalidad {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f4fdf4;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.tarjeta-nacionalidad h4 {
+  margin-bottom: 0.3rem;
+  color: #1e7720;
+}
+
+.tarjeta-nacionalidad p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta-nacionalidad .acciones {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.tarjeta-nacionalidad .acciones button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tarjeta-nacionalidad .acciones button:first-child {
+  background-color: #3e8ed0;
+  color: white;
+}
+
+.tarjeta-nacionalidad .acciones button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.mensaje-alerta {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}

@@ -1,0 +1,168 @@
+.hero, .info-section, .benefits-section, .carousel-section, .cta-section {
+padding: 3rem 2rem;
+text-align: center;
+}
+
+.home-buttons {
+display: flex;
+justify-content: center;
+gap: 1rem;
+margin-top: 1rem;
+flex-wrap: wrap;
+}
+
+.map-button, .gallery-button, .cta-button {
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+border: none;
+border-radius: 0.75rem;
+background-color: #2e8b57;
+color: white;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+transition: background 0.3s;
+width: auto;
+min-width: fit-content;
+white-space: nowrap;
+}
+
+.map-button:hover, .gallery-button:hover, .cta-button:hover {
+background-color: #256d46;
+}
+
+.benefits-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 2rem;
+margin-top: 2rem;
+}
+
+.benefit-card {
+background: #f9f9f9;
+padding: 2rem;
+border-radius: 1.25rem;
+max-width: 280px;
+box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.icon {
+font-size: 2.5rem;
+color: #2e8b57;
+margin-bottom: 1rem;
+}
+
+/* Para ambos HomeGuest.css y HomeClient.css */
+.atracciones-populares {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.atracciones-populares h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2e8b57;
+}
+
+.atracciones-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.grafica-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  height: 400px;
+}
+
+.lista-atracciones {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.lista-atracciones h3 {
+  margin-bottom: 1rem;
+  color: #2e8b57;
+}
+
+.lista-atracciones ul {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-atracciones li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+}
+
+.lista-atracciones li:last-child {
+  border-bottom: none;
+}
+
+.ranking {
+  font-weight: bold;
+  color: #2e8b57;
+  width: 2rem;
+}
+
+.nombre {
+  flex: 2;
+  font-weight: 500;
+}
+
+.reservas {
+  flex: 1;
+  text-align: right;
+  padding-right: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.precio {
+  font-weight: bold;
+  color: #2e8b57;
+}
+
+.destacado-button {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destacado-button:hover {
+  background-color: #3cb371;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.destacado-button:active {
+  transform: translateY(0);
+}
+
+.icono-destacado {
+  font-size: 1rem;
+}

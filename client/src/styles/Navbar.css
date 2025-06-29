@@ -1,0 +1,147 @@
+.navbar {
+  background-color: #278f27;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 2px 4px rgba(148, 43, 43, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links li,
+.dropbtn {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+
+.navbar .logo{
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* ESTILO PARA CADA LI DEL NAVBAR */
+.navbar .nav-links li {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar .nav-links li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* LINKS Y BOTONES */
+.navbar .nav-links a,
+.navbar .nav-links button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navbar .nav-links a:hover,
+.navbar .nav-links button:hover {
+  text-decoration: underline;
+}
+
+ul h3 {
+  background-color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border-left: 5px solid #3e8ed0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar .dropdown {
+  position: relative;
+}
+
+.navbar .dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.navbar .dropbtn:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navbar .dropdown-content {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  min-width: 200px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.navbar .dropdown-content li {
+  padding: 10px 16px;
+  color: #333;
+  font-weight: normal;
+  text-align: left;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navbar .dropdown-content li:hover {
+  background-color: #f0f0f0;
+}
+
+.navbar .dropdown-content a,
+.navbar .dropdown-content button {
+  color: #333;
+  text-decoration: none;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.navbar .dropbtn {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.logo-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-link:hover {
+  text-decoration: underline;
+}

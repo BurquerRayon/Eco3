@@ -1,0 +1,163 @@
+.permisos-container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.permisos-container h2 {
+  text-align: center;
+  color: #228B22;
+  margin-bottom: 1.5rem;
+}
+
+.btn-volver {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: background-color 0.2s ease;
+  font-weight: bold;
+}
+
+.btn-volver:hover {
+  background-color: #0056b3;
+}
+
+.acciones-permisos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.acciones-permisos input[type="text"] {
+  flex-grow: 1;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.acciones-permisos button {
+  background-color: #228B22;
+  color: white;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.acciones-permisos button:hover {
+  background-color: #1a6f1a;
+}
+
+.permisos-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.permisos-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.permisos-form button {
+  background-color: #0066cc;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.permisos-form button:hover {
+  background-color: #004a99;
+}
+
+.mensaje-alerta {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2d6a2d;
+  background-color: #e6f6e6;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #b7dfb7;
+}
+
+.grid-permisos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta-permiso {
+  background-color: #f1fdf1;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #c6e6c6;
+}
+
+.tarjeta-permiso h4 {
+  margin-bottom: 0.5rem;
+  color: #228B22;
+}
+
+.tarjeta-permiso p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.75rem;
+}
+
+.tarjeta-permiso .acciones {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.tarjeta-permiso button {
+  border: none;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.tarjeta-permiso button:first-child {
+  background-color: #1b85f0;
+  color: white;
+}
+
+.tarjeta-permiso button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+.tarjeta-permiso button:first-child:hover {
+  background-color: #0e3c69;
+}
+
+.tarjeta-permiso button:last-child:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,451 @@
+/* ReservaCliente.css - Versión Mejorada */
+
+/* Estilos generales */
+.dashboard-container {
+  padding: 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2, h3, h4 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Panel de botones */
+.panel-botones {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.panel-botones button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: auto;
+  min-width: fit-content;
+  white-space: nowrap;
+}
+
+.panel-botones button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Filtros */
+.filtros-reserva {
+  margin-bottom: 30px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.filtros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.filtros-grid input,
+.filtros-grid select {
+  padding: 12px;
+  font-size: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.filtros-grid input:focus,
+.filtros-grid select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Formulario de reserva */
+.reserva-form {
+  margin-top: 25px;
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.info-dias {
+  font-size: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #e8f4fc;
+  border-radius: 8px;
+  border-left: 4px solid #3498db;
+}
+
+.cerrado-lunes {
+  color: #e74c3c;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+
+.modo-edicion-info {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #e8f5e9;
+  border-radius: 8px;
+  border-left: 4px solid #2ecc71;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.modo-edicion-info strong {
+  color: #27ae60;
+  font-size: 16px;
+}
+
+/* Líneas de reserva */
+.reserva-linea {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1.5fr 1.5fr 1fr auto;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  gap: 15px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.reserva-linea:hover {
+  border-color: #bdc3c7;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.reserva-linea input,
+.reserva-linea select {
+  padding: 10px 12px;
+  font-size: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.reserva-linea input:focus,
+.reserva-linea select:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.reserva-linea span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Estados de error */
+.error-duplicado {
+  border-color: #e74c3c;
+  background-color: #fdecea;
+}
+
+.fecha-invalida {
+  border-color: #e74c3c !important;
+  background-color: #fdecea;
+}
+
+/* Botones */
+.btn-agregar,
+.btn-confirmar,
+.boton-cancelar,
+.btn-eliminar {
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-agregar {
+  background-color: #2ecc71;
+}
+
+.btn-agregar:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+.btn-confirmar {
+  background-color: #3498db;
+}
+
+.btn-confirmar:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.btn-confirmar:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.boton-cancelar {
+  background-color: #e74c3c;
+}
+
+.boton-cancelar:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.btn-eliminar {
+  padding: 8px;
+  background-color: #e74c3c;
+  min-width: 40px;
+}
+
+.btn-eliminar:hover {
+  background-color: #c0392b;
+}
+
+/* Acciones del formulario */
+.acciones-formulario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+}
+
+.botones-accion {
+  display: flex;
+  gap: 15px;
+}
+
+/* Mensajes */
+.mensaje {
+  font-size: 16px;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mensaje.exito {
+  background-color: #2ecc71;
+  color: white;
+}
+
+.mensaje.error {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Tabla de reservas */
+.tabla-reservas {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabla-reservas th {
+  padding: 15px;
+  text-align: left;
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+}
+
+.tabla-reservas td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}
+
+.tabla-reservas tr:last-child td {
+  border-bottom: none;
+}
+
+.tabla-reservas tr:hover td {
+  background-color: #f5f9fd;
+}
+
+/* Paginación */
+.paginacion-containerNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.paginacion-control,
+.paginacion-numero {
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.paginacion-control:hover,
+.paginacion-numero:hover {
+  background-color: #2980b9;
+}
+
+.paginacion-control:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.paginacion-numero.active {
+  background-color: #2980b9;
+  font-weight: bold;
+}
+
+.paginacion-info {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .reserva-linea {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .acciones-formulario {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .botones-accion {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .panel-botones {
+    flex-direction: column;
+  }
+}
+
+/* Estilos para los botones de acciones en la tabla */
+.acciones-reserva {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.acciones-reserva button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.acciones-reserva button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.acciones-reserva button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Estilo específico para cada tipo de botón */
+.acciones-reserva button:nth-child(1) { /* Editar */
+  background-color: #3498db;
+}
+
+.acciones-reserva button:nth-child(2) { /* Cancelar */
+  background-color: #e74c3c;
+}
+
+.acciones-reserva button:nth-child(3) { /* Pagar */
+  background-color: #2ecc71;
+}
+
+/* Efectos hover específicos */
+.acciones-reserva button:nth-child(1):hover {
+  background-color: #2980b9;
+}
+
+.acciones-reserva button:nth-child(2):hover {
+  background-color: #c0392b;
+}
+
+.acciones-reserva button:nth-child(3):hover {
+  background-color: #27ae60;
+}
+
+/* Tooltips para los botones */
+.acciones-reserva button {
+  position: relative;
+}
+
+.acciones-reserva button::after {
+  content: attr(title);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.acciones-reserva button:hover::after {
+  opacity: 1;
+  visibility: visible;
+  bottom: calc(100% + 10px);
+}
