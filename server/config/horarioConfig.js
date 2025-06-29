@@ -1,0 +1,1 @@
+module.exports = { hora_inicio: "09:00", hora_fin: "17:00" };
